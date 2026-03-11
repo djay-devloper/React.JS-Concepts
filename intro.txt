@@ -1,0 +1,34 @@
+Why to learn react ?
+    React is a JS library used to build UI. when there was no react we used to build UI using jquerry and JS but react was developed by facebook for a purpose.
+    We use react to build "complex frontend" like clicking a button changes/updates many things on a single page of facebook.
+
+Why react was created ?
+    State->JS  & UI-> DOM
+    states are managed by JS and UI is managed by DOM.
+
+    we saw the problem on a single facebook page, after reading msg the notification icon was still showing msg. it was due to the no conversation btw the states and UI. This problem was solved by react.
+
+
+Topics to learn
+    1. Core of react(state or UI manipulation, JSX)
+    2. Component reusability- creating one button or card and using it many times.
+    3. Props- property passing to Component.
+    4. How to propagate changes(hooks)- useState, useEffect etc.
+
+
+Additional Addon to React
+    1. Router(React don't have Router)- install react-router-DOM package.
+    2. State management(React don't have state management).
+            Redux, Redux toolkit, zustand, contex API- these are JS library.
+    3. Class based Component- when react was firstly intoduced(1% compamies).
+            legacy code- older version code base.
+    4. BAAS apps- backend as service(firebase, appwite)
+            social media clone, e-commerce apps.
+
+    
+    After react
+       1. react is not a complete solution in most cases.
+           no seo, browser render of JS, no routing
+       2. Frameworks
+           Next.JS, Gatsby, Remix
+
