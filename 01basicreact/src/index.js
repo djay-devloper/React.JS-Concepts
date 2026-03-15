@@ -7,7 +7,7 @@ import App from './App';
 // React itself only creates components and virtual UI.
 // ReactDOM is responsible for putting that UI into the actual HTML page.
 
-// createRoot()is a method of ReactDOM which creates a React root container inside the HTML element.
+// createRoot()is a method of ReactDOM which creates a ReactElement inside the HTML element/tag.
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
