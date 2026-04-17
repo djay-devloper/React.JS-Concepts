@@ -33,11 +33,13 @@ function App() {
       <div className="w-full">
         <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
 
+        {/* e.preventDefault() stops the browser from trying to send form data to a server and page reload */}
         <form onSubmit={(e)=> {
           e.preventDefault();
           convert()
         }}>
           
+          {/* From section  */}
           <div className="w-full mb-1">
             <InputBox 
               label="From"
@@ -49,12 +51,14 @@ function App() {
               />
           </div>
 
+          {/* Swap button */}
           <div className="relative w-full h-0.5">
             <button className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5"
             type="button"
             onClick={swap}>SWAP</button>
           </div>
 
+          {/* Component InputBox reused here */}
           <div className="w-full mt-1 mb-4">
             <InputBox
               label="To"

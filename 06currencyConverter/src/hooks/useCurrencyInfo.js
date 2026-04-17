@@ -4,6 +4,8 @@ import { useState, useEffect } from "react"
 
 function useCurrencyInfo(currency){
     const[data, setData]= useState({})
+
+    // fetching data is side effect hence useEffect is used.
     useEffect(()=>{
         fetch(`https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/${currency}.json`)
         .then((res)=> res.json())
@@ -18,3 +20,5 @@ function useCurrencyInfo(currency){
 }
 
 export default useCurrencyInfo;
+
+// this hook fetches data for a particular given currency.
