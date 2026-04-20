@@ -9,7 +9,7 @@ import User from './components/User/User.jsx'
 
 // these are the std way to define and render the routes
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
-import Github from './components/Github/Github.jsx'
+import Github, { GithubInfoLoader } from './components/Github/Github.jsx'
 
 // This is an another method of creating router.
 // const router = createBrowserRouter([
@@ -41,9 +41,12 @@ const router_me= createBrowserRouter(
       <Route path='ContactUs' element={<Contact/>} />
 
       {/* Dynamic Routing */}
-      {/* here userid is parameter which can be accessed later */}
+      {/* here userid is parameter which can be accessed through url */}
       <Route path='User/:userid' element={<User/>} />
-      <Route path='Github' element={<Github/>}/>
+      <Route 
+        path='Github' 
+        element={<Github/>}
+        loader= {GithubInfoLoader}/>
     </Route>
   )
 )
