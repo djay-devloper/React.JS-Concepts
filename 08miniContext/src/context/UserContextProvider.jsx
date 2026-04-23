@@ -1,8 +1,10 @@
-// This is the way of passing different values, states, functions to a context.
+//step 2:- Creating provider. This is the way of passing different values, states, functions to a context.
 
-import React, { Children } from "react";
+import React from "react";
 import UserContext from "./UserContext";
 
+// If we use children as parameter inside contextProvider, then whatever is enclosed under contextProvider can consume 
+// this context. You can also enclose the specific components only like Login, Profile.
 const UserContextProvider= ({children})=> {
     const [user, setUser]= React.useState({})
 
