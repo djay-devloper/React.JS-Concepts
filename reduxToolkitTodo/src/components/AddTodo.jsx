@@ -8,6 +8,8 @@ function AddTodo() {
 
     const addTodoHandler = (e) => {
         e.preventDefault()
+        
+        // dispatching a reducer to the redux store
         dispatch(addTodo(input))
         setInput('')
     }

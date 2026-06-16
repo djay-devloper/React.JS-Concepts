@@ -2,7 +2,7 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 
 // how store look like initialyy.
 const initialState= {
-    todos: [{id: 1, msg: "Hello World"}]
+    todos: [{id: 1, text: "Hello World"}]
 }
 
 // creating slice which is holding reducers and other tools.
