@@ -1,5 +1,6 @@
 import React, {useId} from 'react'
 
+// Wrapping the component in forwardRef allows a parent component to pass a ref directly to the underlying native HTML <input> element inside your custom component.
 const Input = React.forwardRef( function Input({
     label,
     type = "text",
