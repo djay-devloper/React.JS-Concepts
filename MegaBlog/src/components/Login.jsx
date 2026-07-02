@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import {useState} from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import {login as authLogin} from '../store/authSlice'
 import {Button, Input, Logo} from './index'
@@ -78,6 +78,8 @@ function Login(){
     </div>
   )
 }
+
+export default Login
 
 // register: It acts as a bridge, connecting your input element directly to the React Hook Form state. When you call register("inputName"), it returns an object containing specific properties: onChange, onBlur, name, and ref. By using the JavaScript spread operator (...), you inject these properties directly into your <input> tag.
 

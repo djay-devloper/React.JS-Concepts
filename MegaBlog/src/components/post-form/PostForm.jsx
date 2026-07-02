@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 
 // if post variable provided then updatPost mode otherwise createPost mode
 export default function PostForm({post}){
-    const {register, handleSubmit, watch, control, getValues}= useForm({
+    const {register, handleSubmit, watch, control, getValues, setValue}= useForm({
         defaultValues: {
             title: post?.title || "",
             slug: post?.$id || "",

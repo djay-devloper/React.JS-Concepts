@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import {useEffect, useState} from 'react'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
@@ -13,7 +13,8 @@ export default function Protected({children, authentication= true}){
         }else if(!authentication && authStatus!== authentication){
             navigate("/")
         }
-        setLoader(false)
+        // avoid synchronous setState inside effect to prevent cascading renders
+        setTimeout(() => setLoader(false), 0)
     }, [authStatus, navigate, authentication])
 
     return loader ? <h1>Loading...</h1> : <>{children}</>
